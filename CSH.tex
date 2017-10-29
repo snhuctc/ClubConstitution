@@ -1,0 +1,138 @@
+\documentclass{article}
+\providecommand{\RevisionInfo}{}
+% The xr package allows external references
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+% Reformat section titles
+\usepackage{titlesec}
+
+% This package is useful for debugging label problems
+% Comment out in final revision
+%\usepackage{showkeys}
+
+% Define the external document to be bylaws for cross referencing purposes
+%\externaldocument{bylaws}[https://github.com/ComputerScienceHouse/Constitution/blob/master/bylaws.pdf?raw=true]
+\externaldocument{bylaws}[bylaws.pdf]
+
+% Title page information
+\title{Computer \& Technology Club Constitution}
+\author{SNHU CTC E-Board}
+% Last Modified Date
+\newcommand{\datechanged}{Last Updated: \RevisionInfo}
+\date{\datechanged}
+
+% Fix margins
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% Use \article for articles and \asection for sections of articles.
+% Automatically provide labels with the same article or section title.
+\newcommand{\article}[1]{\section{#1} \label{#1}}
+\newcommand{\asection}[1]{\subsection{#1} \label{#1}}
+\newcommand{\asubsection}[1]{\subsubsection{#1} \label{#1}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
+
+% Adding an \asubsubsection 
+\setcounter{secnumdepth}{5}
+\newcommand{\asubsubsection}[1]{\paragraph{#1} \label{#1}}
+\renewcommand{\theparagraph}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}.\Alph{paragraph}}
+
+% Headings
+\pagestyle{myheadings}
+\markright{{\rm CTC Constitution \hfill \datechanged \hfill Page }}
+
+% Reference example:
+%Test reference \ref{House Objectives} House Objectives.
+
+
+\begin{document}
+% Title
+\maketitle
+
+\tableofcontents
+
+% ARTICLE I - INTRODUCTION
+\article{Name}
+The name this organization shall be "Computer \& Technology Club" or organization.
+
+\article{Purpose of the Organization}
+The purpose of this organization shall be to provide a space for students interested in Computers \& Technology to come together and learn more about the field. The organization will also provide a space where students can work together on Technology projects with guidance from other members.
+
+\article{Officers}
+Election of officers will require a majority vote from the general membership. If a candidate fails to receive a majority of votes, a runoff election will be held within the top two candidates that received the most votes. Members interested in becoming an officer must must meet the following academic requirements: 2.5 Cumulative G.P.A. for undergraduate student and 3.0 cumulative for graduate student. The term of office will be until the next election period. The executive board of the organization is comprised of all recognized officers. The Executive Board shall meet in addition to regular organization meetings. The Executive Board shall appoint committees if they are needed to carry out organization goals.
+
+\asection{President}
+\begin{enumerate}
+\item Preside over all meetings
+\item Represent organization on campus
+\item Ensure the organization is operating in conformity with the standards set forth by Southern New Hampshire University, the Office of Student Involvement, and the Student Government Association.
+\item Set the schedule for club meetings
+\item Create Executive Board Meeting Agendas
+\end{enumerate}
+
+\asection{Vice-President}
+\begin{enumerate}
+\item Preside over meetings in the absence of the President
+\item Schedule meetings / events with appropriate University Offices
+\item Review club technology needs and make recommendations to the executive board
+\item Carries out all presidential duties in the absence of the president
+\item Check and respond to the email in the ITSA account
+\end{enumerate}
+
+\asection{Treasurer}
+\begin{enumerate}
+\item Maintain accurate record of organization transactions
+\item Develop organization budget and present to the executive board for a $3/4$ vote
+\item Arrange fund raising opportunities for the organization
+\item Solicit additional funding if needed from the Student Government Association
+\end{enumerate}
+
+\asection {Secretary}
+\begin{enumerate}
+\item Maintain a membership directory and return completed roster forms to the Office of Student Involvement
+\item Maintain an accurate record of all organization member meetings.
+\item Maintain minutes of the executive board meetings.
+\item Work with the President to create in-depth meeting plans for the membership meetings.
+\item Manage all marketing platforms
+\end{enumerate}
+
+\article{Impeachment of Officers}
+An officer can be impeached from the Executive Board by written nomination of any other officer or the advisor. The executive board and advisor will meet within two weeks, during this meeting the officer accusing the nominated executive board will explain their case. The nominated officer will have a chance to explain their actions to the rest of the executive board. The executive board will then have a chance to deliberate and vote without the nominated executive board member present. The vote will be passed by a $2/3$ vote of the executive board, not including the advisor. In case of a tie, the advisor has the right to the final decision. The advisor will then inform the nominated executive board member of the decision.
+
+\article{Elections}
+Elections are held once a year, one month prior to the conclusion of the academic year. Any member that has been active with the organization for one or more semesters can run for office. Through a majority vote, a person can be elected into office. If a mid-year vacancy occurs, a vote of $2/3$ of the executive board can approve a new executive board member.
+
+\article{Membership}
+Membership in this organization is open to all SNHU, graduate and undergraduate students who have paid their student activity fee. Membership will not be restricted on the basis of age, disability, ethnicity, gender, national origin, race, religion, sexuality, gender identity or expression, or political affiliation. Students in good standing with the University (2.5 cumulative  G.P.A. for undergraduate and 3.0 for Graduate) are eligible for membership after attending or participating in an organization event/meeting.
+
+As a member, one is required to attend organization meetings regularly and actively support organization projects. Membership will be revoked by $1/2$ vote of Executive Board if actions are deemed inappropriate by the membership.
+
+\article{Finances}
+The treasurer shall maintain all financial records. All income accounts shall be established through the Office of Student Involvement. The treasurer shall also complete any budget disbursement requests as well as any funding request forms.
+
+\article{Voting Authority}
+The executive board shall have all voting authority for club decisions other than the election of candidates during a general election. The advisor will have no voting authority. In the event of a deadlock, a coin will be flipped; heads will be in favor of the proposed motion, tails will be against the proposed motion. The coin flip will be the best of two out of three.
+
+\article{Meetings}
+The organization shall hold regular meetings during the academic term except when holidays, examination periods or other events make meeting impractical. Organization meeting time will be determined by the executive board along with room availability and the availability of the advisor. Attendance at organization meetings is expected. If a member must miss a meeting correspondence to the secretary is appreciated. A quorum shall consist of a simple majority of the membership plus one officer. Robert's Rules of Order shall govern all meetings.
+
+\article{Conduct}
+All recognized student organizations and club members are expected to abide by the University Student Code of Conduct found within the SNHU Student Handbook. Club Recognition is a right of the University and for this reason, the process of recognizing, supporting and fostering student organizations is a shared responsibility. The University reserves it's right to deny or withdraw recognition from any group deemed not to be in concert with the goals and objectives of the University (see SNHU Student Handbook for the full policy).
+
+\article{Amendments}
+Amendments to this constitution must be submitted in writing at a regular meeting of the organization. Said amendments will be voted on at a subsequent meeting. In order to adopt the amendment, a vote of $3/4$ of the executive board membership is required.
+
+\article{Advisor}
+The advisor shall be a full time faculty or staff member at Southern New Hampshire University. The advisor will assume those responsibilities as outlined in this constitution. The advisor will be selected by a $2/3$ vote of the Executive Board. Advisors not fulfilling responsibilities or not abiding by the organization's purpose may be removed from the position by a $1/2$ vote of the Executive Board.
+
+\article{Ratification}
+The constitution shall become effective upon approval by a $3/4$ vote of the membership. A copy of this constitution must be on-file with the Office of Student Involvement. The minutes will also be submitted of the meeting when the vote was held alongside the updated constitution.
+
+\end{document}
