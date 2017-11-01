@@ -10,7 +10,6 @@
 *.fot
 *.cb
 *.cb2
-*.pdf
 .DS_Store
 
 ## Intermediate documents:
